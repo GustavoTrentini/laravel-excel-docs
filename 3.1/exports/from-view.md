@@ -42,6 +42,12 @@ It will convert an HTML table into an Excel spreadsheet. For example; `users.bla
         </tr>
     @endforeach
     </tbody>
+    <tfoot>
+        <tr>
+            <td><strong>Qtd total: </strong></td>
+            <td><strong>{{$users->count()}}</strong></td>
+        </tr>
+    </tfoot>
 </table>
 ```
 
